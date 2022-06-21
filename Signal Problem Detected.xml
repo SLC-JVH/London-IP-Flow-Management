@@ -1,12 +1,10 @@
-<DMSScript options="256">
+﻿<DMSScript options="256">
 	<Name>Signal Problem Detected</Name>
 	<Description></Description>
 	<Type>Automation</Type>
 	<Author>SKYLINE2\Jan</Author>
 	<CheckSets>TRUE</CheckSets>
 	<Folder>Operations/LONDON</Folder>
-	<Category>0</Category>
-	<ExternalSourceUrl></ExternalSourceUrl>
 	<Protocols>
 		<Protocol id="5">
 			<Description>Switch</Description>

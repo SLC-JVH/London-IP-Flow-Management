@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7680ED9A-D638-4391-826A-59B547A3EF4C}</ProjectGuid>
+    <ProjectGuid>{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Signal_Problem_Detected_2</RootNamespace>
@@ -40,16 +40,28 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SLManagedAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Skyline.DataMiner.Dev.Automation.10.2.6.1\lib\net462\SLManagedAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="SLNetTypes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9789b1eac4cb1b12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Skyline.DataMiner.Dev.Common.10.2.6.1\lib\net462\SLNetTypes.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="SLManagedAutomation">
-      <HintPath>C:\Skyline DataMiner\Files\SLManagedAutomation.dll</HintPath>
-    </Reference>
-    <Reference Include="SLNetTypes">
-      <HintPath>C:\Skyline DataMiner\Files\SLNetTypes.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\AutomationScript_ClassLibrary\AutomationScript_ClassLibrary.csproj">
+      <Project>{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}</Project>
+      <Name>AutomationScript_ClassLibrary</Name>
+    </ProjectReference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
+    <Reference Include="Skyline.DataMiner.Storage.Types">
+      <HintPath>c:\users\andi tamer\appdata\local\microsoft\visualstudio\17.0_7ef52c08\extensions\itgzdiv4.kxm\Files\DMADLLs\Skyline.DataMiner.Storage.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="SLLoggerUtil">
+      <HintPath>c:\users\andi tamer\appdata\local\microsoft\visualstudio\17.0_7ef52c08\extensions\itgzdiv4.kxm\Files\DMADLLs\SLLoggerUtil.dll</HintPath>
+    </Reference>
     <AdditionalFiles Include="stylecop.json" />
     <Content Include=".editorconfig" />
   </ItemGroup>
@@ -58,6 +70,7 @@
     <Compile Include="Signal Problem Detected_2.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -67,7 +80,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties DisLinkId="2" DisProjectType="automationScriptProject" DisLinkedXmlFile="..\Signal Problem Detected.xml" />
+      <UserProperties DisLinkedXmlFile="..\Signal Problem Detected.xml" DisProjectType="automationScriptProject" DisLinkId="2" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

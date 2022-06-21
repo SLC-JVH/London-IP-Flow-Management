@@ -1,36 +1,44 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32516.85
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{8A8FF612-F228-4EDF-8EE0-8A025DA4C2F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{D5286CAD-88AE-447E-AD34-BC314783A285}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CEE13800-4377-4BE4-9D54-44CA6921C993}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0F1C7F82-2A32-4A2F-8769-1CD9882FB082}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{4D075895-5EF1-476F-A47A-71CB3726D4F6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{F3BBD2F8-C271-4341-A5B0-04D8DE5FE9F4}"
 	ProjectSection(SolutionItems) = preProject
 		Dlls\readme.txt = Dlls\readme.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{B2EE39DD-3B36-4AFC-BC5C-507918AE1DDD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{31CC6A26-53F4-4492-B332-63E43DB096DF}"
 	ProjectSection(SolutionItems) = preProject
 		Documentation\readme.txt = Documentation\readme.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{AA0B533D-8617-4901-8AEF-567C05E00CAD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{F7A99861-4910-411B-909C-94070595D765}"
 	ProjectSection(SolutionItems) = preProject
 		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
 		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\SonarLint-QuickActions-Active.ruleset = Internal\Code Analysis\SonarLint-QuickActions-Active.ruleset
+		Internal\Code Analysis\SonarLint-QuickActions-Inactive.ruleset = Internal\Code Analysis\SonarLint-QuickActions-Inactive.ruleset
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Signal Problem Detected", "Signal Problem Detected", "{30D52DAE-AD33-45AE-A49A-35D6D24AFE94}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationScript_ClassLibrary", "AutomationScript_ClassLibrary\AutomationScript_ClassLibrary.csproj", "{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Signal Problem Detected", "Signal Problem Detected", "{26809EDF-9998-4BD7-A27A-2E2F067C5349}"
 	ProjectSection(SolutionItems) = preProject
 		Signal Problem Detected.xml = Signal Problem Detected.xml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{D4E99416-4D7E-4822-92AA-A2B31B18F8B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{D2F6ED7C-45DA-4900-A705-652FAA615EF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal Problem Detected_2", "Signal Problem Detected_2\Signal Problem Detected_2.csproj", "{7680ED9A-D638-4391-826A-59B547A3EF4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Signal Problem Detected_2", "Signal Problem Detected_2\Signal Problem Detected_2.csproj", "{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0D756F96-B84C-47C6-9EAF-438086085681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scripts.UnitTests", "Scripts.UnitTests\Scripts.UnitTests.csproj", "{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,21 +46,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7680ED9A-D638-4391-826A-59B547A3EF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7680ED9A-D638-4391-826A-59B547A3EF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7680ED9A-D638-4391-826A-59B547A3EF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7680ED9A-D638-4391-826A-59B547A3EF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AA0B533D-8617-4901-8AEF-567C05E00CAD} = {8A8FF612-F228-4EDF-8EE0-8A025DA4C2F6}
-		{30D52DAE-AD33-45AE-A49A-35D6D24AFE94} = {CEE13800-4377-4BE4-9D54-44CA6921C993}
-		{D4E99416-4D7E-4822-92AA-A2B31B18F8B6} = {30D52DAE-AD33-45AE-A49A-35D6D24AFE94}
-		{7680ED9A-D638-4391-826A-59B547A3EF4C} = {D4E99416-4D7E-4822-92AA-A2B31B18F8B6}
+		{F7A99861-4910-411B-909C-94070595D765} = {D5286CAD-88AE-447E-AD34-BC314783A285}
+		{4D4221B9-D882-4B4C-B8FD-24B793F7BFA4} = {D5286CAD-88AE-447E-AD34-BC314783A285}
+		{26809EDF-9998-4BD7-A27A-2E2F067C5349} = {0F1C7F82-2A32-4A2F-8769-1CD9882FB082}
+		{D2F6ED7C-45DA-4900-A705-652FAA615EF3} = {26809EDF-9998-4BD7-A27A-2E2F067C5349}
+		{024BC1CD-FC49-4EE2-AB1F-7D39C0B9B80C} = {D2F6ED7C-45DA-4900-A705-652FAA615EF3}
+		{991BDDC4-0ECE-4C1C-9733-FBF0C2A8706E} = {0D756F96-B84C-47C6-9EAF-438086085681}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {421DAD0A-E7EB-4F52-AB60-E9BA7CBB0C37}
+		SolutionGuid = {325D4F6B-5A34-4C77-9970-DC2149EC0FFC}
 	EndGlobalSection
 EndGlobal

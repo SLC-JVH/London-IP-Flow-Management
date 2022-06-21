@@ -18,7 +18,7 @@ public class Script
 
 		string[] trigger = triggerElement.Split('_');
 
-		string _issueString = "An error was detected with the uplink in ";
+		string _issueString = "An issue was detected with the uplink in ";
 
 
 		if (trigger[3] == "MAIN")
